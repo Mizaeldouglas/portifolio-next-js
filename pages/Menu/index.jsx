@@ -8,6 +8,8 @@ import About from '../About'
 import Inicio from '../Inicio'
 import Contato from '../Contato';
 import Portifolio from '../Portifolio';
+import  Avatar  from '@mui/material/Avatar';
+import { Stack } from '@mui/material';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,15 +55,17 @@ export default function VerticalTabs() {
     <Box
       sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 750, }}
     >
-	 
+	
+	
       <Tabs
         orientation="vertical"
         variant="scrollable"
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
-        sx={{ borderRight: 1, borderColor: 'divider',width: 200, paddingTop: 20, }}
+        sx={{ borderRight: 1, borderColor: 'divider',width: 200, paddingTop: 10, }}
       >
+	   
         <Tab label="Home" {...a11yProps(0)} />
         <Tab label="Sobre" {...a11yProps(1)} />
         <Tab label="Portifolio" {...a11yProps(2)} />

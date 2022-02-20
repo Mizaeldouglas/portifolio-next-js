@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
+	margin: 80px;
+
 img{
-	width: 300px;
-	height: 300px;
+	width: 500px;
+	height: 600px;
+	border-radius: 30%;
+}
+.Texto{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 `;
 
-export const ImagemMizael = styled.img`
-  background-image: url('../../public/1.jpg');
-  background-size: cover;
-`;
+
